@@ -42,27 +42,111 @@ nav .icon{
     width: 20px;
     margin-right: 5px;
 }
+nav .search-bar{
+  width: 100%;
+}
 nav ul .search{
     padding: 3px 5px;
     outline: 0;
     border-radius: 5px;
-    width: 230px;   
+    width: 400px;   
 }
 nav ul .glass{
     width: 18px;
     position: absolute;
-    margin-left: 200px;
+    margin-left: 370px;
     margin-top: 4px;
 }
-.Slider{
-    overflow: hidden;
-    background-color: white;
-    width: 100%;
+.slider {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  justify-content: center;
+  
 }
-.list-banner{
-    width: 100%;
-    outline: 2px solid black;
-    margin-top: 20px;
-    display: flex;
-    transition: 0.5s;
+
+.slides {
+  width: 400%;
+  height: 100%;
+  display: flex;
+}
+
+.slides input {
+  display: none;
+}
+
+.slide {
+  width: 25%;
+  transition: 2s;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+}
+
+.navigation-manual {
+  position: absolute;
+  width: 100%;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn {
+  border: 2px solid #40d3dc;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+  margin-right: 40px;
+}
+
+.manual-btn:hover {
+  background: #40d3dc;
+}
+
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+  margin-left: -25%;
+}
+
+#radio3:checked ~ .first {
+  margin-left: -50%;
+}
+
+#radio4:checked ~ .first {
+  margin-left: -75%;
+}
+
+.navigation-auto {
+  position: absolute;
+  display: flex;
+  width: 800px;
+  justify-content: center;
+  margin-top: 260px;
+  display: none;
+}
+
+.navigation-auto div {
+  border: 2px solid #40d3dc;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.navigation-auto div:not(:last-child) {
+  margin-right: 40px;
+}
+
+.auto-btn1, .auto-btn2, .auto-btn3, .auto-btn4 {
+  background: #40d3dc;
 }

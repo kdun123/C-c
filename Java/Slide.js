@@ -1,16 +1,17 @@
-const listBanner = document.querySelector('.list-banner')
-const imgs = document.getElementsByTagName('img')
-const lenght = imgs.length
-let current = 0
-
-setInterval(() => {
-    if (current == length - 1){
-        current = 0
-        let width = imgs[0].offsetWidth
-        listBanner.style.transform = `translateX(0px)`
-    } else {
-        current ++
-        let width = imgs [0].offsetWidth
-        listBanner.style.transform = `translateX(${width * -1 * current}px)`
+let counter = 1;
+setInterval(function() {
+    document.getElementById('radio' + counter).checked = true;
+    counter++;
+    if (counter > 4) {
+        counter = 1;
     }
-},4000)
+}, 4000); // Change slide every 3 seconds
+
+function toggleNavigation() {
+    const navigation = document.getElementById('navigation-auto');
+    if (navigation.style.display === "none" || navigation.style.display === "") {
+        navigation.style.display = "flex";
+    } else {
+        navigation.style.display = "none";
+    }
+}

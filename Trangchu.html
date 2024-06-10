@@ -10,7 +10,7 @@
     <div class="container">
         <nav>
         <img src="Image/images.png" alt="" width="50" class="logo">
-        <ul>
+        <ul class="search-bar">
                 <img src="Image/sticker-png-shopping-cart-ecommerce-imoco-volley-conegliano-lawn-mowers-price-business-hvac-sales.png" alt="" class="glass">
                 <input type="text" placeholder="Tìm kiếm..." class="search">
         </ul>
@@ -18,14 +18,42 @@
         <button class="buy"><a href="#">Mua hàng</a></button>
         </nav>
     </div>
-    <div class="Slider">
-        <div class="list-banner">
-            <img src="Image/1920x650 (2).jpg" alt="">
-            <img src="Image/1920x650 (1).jpg" alt="">
-            <img src="Image/banner1920x650.jpg" alt="">
-            <img src="Image/mytv_w.jpg" alt="">
+    <div class="slider" onclick="toggleNavigation()">
+        <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+    
+            <div class="slide first">
+                <img src="Image/1920x650 (1).jpg" alt="Slide 1">
+            </div>
+            <div class="slide">
+                <img src="Image/1920x650 (2).jpg" alt="Slide 2">
+            </div>
+            <div class="slide">
+                <img src="Image/banner1920x650.jpg" alt="Slide 3">
+            </div>
+            <div class="slide">
+                <img src="Image/Vinaphone_KV _Chuẩn hóa thông tin__1920x650-.png" alt="Slide 4">
+            </div>
+    
+            <div class="navigation-auto" id="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+            </div>
+        </div>
+    
+        <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
         </div>
     </div>
+    </div>>
     <script src="Java/Slide.js"></script>
 </body>
 </html>
