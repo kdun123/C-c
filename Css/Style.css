@@ -57,6 +57,21 @@ nav ul .glass{
     margin-left: 370px;
     margin-top: 4px;
 }
+.Data{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: #0dc9d3;
+  position: relative;
+  height: 40px;
+  justify-content: space-evenly;
+}
+.Data a{
+font-weight: bolder;
+font-size: larger;
+text-decoration: none;
+color: whitesmoke;
+}
 .slider {
   width: 100%;
   height: 100%;
@@ -101,6 +116,7 @@ nav ul .glass{
   border-radius: 10px;
   cursor: pointer;
   transition: 1s;
+  width: 100px;
 }
 
 .manual-btn:not(:last-child) {
