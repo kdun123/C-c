@@ -1,5 +1,62 @@
-a{
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    align-items: center;
+}
+.buy{
+    background-color: rgb(5, 136, 243);
+    width: 100px;
+    margin-right: 5px;
+    padding: 3px;
+    display: inline-block;
+    margin: 4px 2px;
+    border-radius: 10px;
+}
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.logo{
+    cursor: pointer;
+    margin-left: 10px;
+}
+nav ul{
+    list-style: none;
+    width: 100%;
     text-align: center;
+}
+button a{
     text-decoration: none;
-    color: black;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+nav .icon{
+    width: 20px;
+    margin-right: 5px;
+}
+nav ul .search{
+    padding: 3px 5px;
+    outline: 0;
+    border-radius: 5px;
+    width: 230px;   
+}
+nav ul .glass{
+    width: 18px;
+    position: absolute;
+    margin-left: 200px;
+    margin-top: 4px;
+}
+.banner{
+    width: 100%;
+    outline: 2px solid black;
+    margin-top: 20px;
+    display: flex;
 }
