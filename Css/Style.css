@@ -54,9 +54,15 @@ nav ul .glass{
     margin-left: 200px;
     margin-top: 4px;
 }
-.banner{
+.Slider{
+    overflow: hidden;
+    background-color: white;
+    width: 100%;
+}
+.list-banner{
     width: 100%;
     outline: 2px solid black;
     margin-top: 20px;
     display: flex;
+    transition: 0.5s;
 }
