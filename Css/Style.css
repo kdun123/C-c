@@ -172,7 +172,8 @@ color: whitesmoke;
   margin-top: 10px;
   padding: 20px;
   display: grid;
-  grid-template-columns: 30% 40% 30%;
+  justify-content: center;
+  align-content: center;
 }
 .News img{
   border-radius: 10%;
@@ -184,6 +185,7 @@ color: whitesmoke;
   font-size: x-large;
   text-align: left;
   align-items: center;
+  width: 500px;
 }
 .News .container{
   justify-content: center;
