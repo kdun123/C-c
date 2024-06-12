@@ -5,7 +5,7 @@ setInterval(function() {
     if (counter > 4) {
         counter = 1;
     }
-}, 5000); // Change slide every 3 seconds
+}, 5000);
 
 function toggleNavigation() {
     const navigation = document.getElementById('navigation-auto');

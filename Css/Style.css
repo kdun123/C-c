@@ -166,3 +166,29 @@ color: whitesmoke;
 .auto-btn1, .auto-btn2, .auto-btn3, .auto-btn4 {
   background: #40d3dc;
 }
+.News{
+  background-color: #40d3dc;
+  width: 100%;
+  margin-top: 10px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+}
+.News img{
+  border-radius: 10%;
+}
+.news-text{
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+  font-size: x-large;
+  text-align: left;
+  align-items: center;
+}
+.News .container{
+  justify-content: center;
+  align-self: center;
+}
+.News .container .row{
+  align-items: center;
+}
