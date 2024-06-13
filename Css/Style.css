@@ -79,9 +79,8 @@ color: whitesmoke;
   position: relative;
   cursor: pointer;
   justify-content: center;
-  
+  outline-style: solid;
 }
-
 .slides {
   width: 400%;
   height: 100%;
