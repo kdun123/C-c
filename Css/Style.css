@@ -80,6 +80,7 @@ color: whitesmoke;
   cursor: pointer;
   justify-content: center;
   outline-style: solid;
+  outline-color: white;
 }
 .slides {
   width: 400%;
@@ -108,7 +109,6 @@ color: whitesmoke;
   display: flex;
   justify-content: center;
 }
-
 .manual-btn {
   border: 2px solid #40d3dc;
   padding: 5px;
@@ -150,14 +150,6 @@ color: whitesmoke;
   margin-top: 260px;
   display: none;
 }
-
-.navigation-auto div {
-  border: 2px solid #40d3dc;
-  padding: 5px;
-  border-radius: 10px;
-  transition: 1s;
-}
-
 .navigation-auto div:not(:last-child) {
   margin-right: 40px;
 }
